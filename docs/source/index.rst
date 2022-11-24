@@ -7,6 +7,7 @@ SAÉ 15 - Traiter des données
 =======================================
 
 .. toctree::
+<<<<<<< HEAD
    :maxdepth: 1
    :caption: Objectif général de la SAÉ
 
@@ -18,6 +19,11 @@ SAÉ 15 - Traiter des données
    content/cahier_des_charges
    content/code
 
+=======
+   :maxdepth: 2
+   :caption: Contents:
+./code.rst
+>>>>>>> 7e85726917a9189111dbd83b388d7764469e700c
 
 
 Indices and tables
