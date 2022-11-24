@@ -9,7 +9,7 @@ Welcome to RTShark's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-./doc.rst
+./code.rst
 
 
 Indices and tables
