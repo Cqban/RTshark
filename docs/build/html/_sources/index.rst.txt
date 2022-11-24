@@ -1,9 +1,9 @@
-.. RTShark documentation master file, created by
-   sphinx-quickstart on Tue Nov 15 15:02:30 2022.
+.. RTshark documentation master file, created by
+   sphinx-quickstart on Thu Nov 24 13:45:43 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to RTShark's documentation!
+Welcome to RTshark's documentation!
 ===================================
 
 .. toctree::
