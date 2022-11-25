@@ -2,9 +2,9 @@ import pyshark
 import sys
 import argparse
 
-parser = argparse.ArgumentParser()                                               
-parser.add_argument( "input-file", type=str )
-parser.add_argument( "output-file", type=str )
+parser = argparse.ArgumentParser(description="RTshark")                                               
+parser.add_argument( "--input-file", "input_file", required=True)
+parser.add_argument( "--output-file", "output_file", required=True)
 args = parser.parse_args()
 
 input_file = args.input_file
