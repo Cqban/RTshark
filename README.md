@@ -104,7 +104,7 @@ To run this program, you must have Python installed
 Here's an example of how to use the script, look the command below.
 
 ```sh
-python script.py <pcap_file>
+python3 script.py --input-file <pcap_file> --output-file <output-html-file>
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
