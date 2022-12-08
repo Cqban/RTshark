@@ -85,10 +85,12 @@ To run this program, you must have Python installed
    ```
 2. Move in the folder
    ```sh
-   cd RTshark/
+   cd RTshark-main/RTshark/
    ```
 3. Install the requirements
    ```sh
+   apt-get install python3 (in case you haven't installed python yet)
+   apt-get install pip
    pip install -r requirements.txt
    ```
 
