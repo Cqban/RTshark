@@ -144,7 +144,7 @@ Don't forget to give the project a star!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - cqban_pro@protonmail.com
+Cqban - cqban_pro@protonmail.com
 
 Project Link: [https://github.com/Cqban/RTshark/](https://github.com/Cqban/RTshark/)
 
