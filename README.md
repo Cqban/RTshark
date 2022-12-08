@@ -12,7 +12,7 @@
 <div align="center">
   <h3 align="center">RTshark</h3>
   <p align="center">
-    A python program allowing you to extract all the open ports from a pcap file and visualize them onto a website !
+    A python program allowing you to extract all the open ports from a pcap file and visualize them onto a website
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
