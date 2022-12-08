@@ -89,8 +89,8 @@ To run this program, you must have Python installed
    ```
 3. Install the requirements
    ```sh
-   apt-get install python3 (in case you haven't installed python yet)
-   apt-get install pip
+   sudo apt-get install python3 (in case you haven't installed python yet)
+   sudo apt-get install pip
    pip install -r requirements.txt
    ```
 
