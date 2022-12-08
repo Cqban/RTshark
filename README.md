@@ -3,7 +3,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -162,8 +161,6 @@ Project Link: [https://github.com/Cqban/RTshark/](https://github.com/Cqban/RTsha
 [stars-url]: https://github.com/Cqban/RTshark/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Cqban/RTshark.svg?style=for-the-badge
 [issues-url]: https://github.com/Cqban/RTshark/issues
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/malko-lechevrel/
 [Python-shield]: https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue
 [Python-url]: https://python.org 
 [HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
