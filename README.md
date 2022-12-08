@@ -81,11 +81,11 @@ To run this program, you must have Python installed
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Cqban/SAE-Donnees.git
+   git clone https://github.com/Cqban/RTshark.git
    ```
 2. Move in the folder
    ```sh
-   cd SAE-Donnees/
+   cd RTshark/
    ```
 3. Install the requirements
    ```sh
@@ -114,7 +114,8 @@ python script.py <pcap_file>
 
 - [x] Add main script
 - [x] Create sphinx architectory
-- [ ] Export extracted ports to html page
+- [x] Export extracted ports to html page
+- [ ] Make the website actually look better :x
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -144,7 +145,7 @@ Don't forget to give the project a star!
 
 Your Name - cqban_pro@protonmail.com
 
-Project Link: [https://github.com/Cqban/SAE-Donnees/](https://github.com/Cqban/SAE-Donnees/)
+Project Link: [https://github.com/Cqban/RTshark/](https://github.com/Cqban/RTshark/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
