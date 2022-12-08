@@ -1,6 +1,7 @@
 import pyshark
 import sys
 import argparse
+import webbrowser
 
 parser = argparse.ArgumentParser()                                               
 parser.add_argument('--input-file', help="PCAP file to analyze", required=True)
@@ -42,3 +43,5 @@ codehtml = f"""
 
 with open(output_file, 'w') as writinghtml:
     writinghtml.write(codehtml)
+    
+webbrowser.open_new_tab(output_file)
