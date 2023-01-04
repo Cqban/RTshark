@@ -58,6 +58,7 @@ This project is a school work of my first year at the IUT of Chatellerault as a 
 
 * [![Python][Python-shield]][Python-url]
 * ![HTML5][HTML]
+* ![CSS3][CSS3]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +117,7 @@ python3 script.py --input-file <pcap_file> --output-file <output-html-file>
 - [x] Add main script
 - [x] Create sphinx architectory
 - [x] Export extracted ports to html page
-- [ ] Make the website actually look better :x
+- [x] Make the website actually look better :x
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -164,3 +165,4 @@ Project Link: [https://github.com/Cqban/RTshark/](https://github.com/Cqban/RTsha
 [Python-shield]: https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue
 [Python-url]: https://python.org 
 [HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[CSS3]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
