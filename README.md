@@ -3,7 +3,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -12,7 +11,7 @@
 <div align="center">
   <h3 align="center">RTshark</h3>
   <p align="center">
-    A python program allowing you to extract all the open ports from a pcap file and visualize them onto a website !
+    A python program allowing you to extract all the open ports from a pcap file and visualize them onto a website
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
@@ -59,6 +58,7 @@ This project is a school work of my first year at the IUT of Chatellerault as a 
 
 * [![Python][Python-shield]][Python-url]
 * ![HTML5][HTML]
+* ![CSS3][CSS3]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,14 +81,16 @@ To run this program, you must have Python installed
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Cqban/SAE-Donnees.git
+   git clone https://github.com/Cqban/RTshark.git
    ```
 2. Move in the folder
    ```sh
-   cd SAE-Donnees/
+   cd RTshark-main/RTshark/
    ```
 3. Install the requirements
    ```sh
+   sudo apt-get install python3 (in case you haven't installed python yet)
+   sudo apt-get install pip
    pip install -r requirements.txt
    ```
 
@@ -102,7 +104,7 @@ To run this program, you must have Python installed
 Here's an example of how to use the script, look the command below.
 
 ```sh
-python script.py <pcap_file>
+python3 script.py --input-file <pcap_file> --output-file <output-html-file>
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -114,7 +116,8 @@ python script.py <pcap_file>
 
 - [x] Add main script
 - [x] Create sphinx architectory
-- [ ] Export extracted ports to html page
+- [x] Export extracted ports to html page
+- [x] Make the website actually look better :x
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -142,25 +145,24 @@ Don't forget to give the project a star!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Cqban - cqban_pro@protonmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Cqban/RTshark/](https://github.com/Cqban/RTshark/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Cqban/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/Cqban/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/Cqban/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/starsCqban/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/Cqban/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Cqban/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/Cqban/Best-README-Template/issues
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/malko-lechevrel/
+[contributors-shield]: https://img.shields.io/github/contributors/Cqban/RTshark.svg?style=for-the-badge
+[contributors-url]: https://github.com/Cqban/RTshark/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Cqban/RTshark.svg?style=for-the-badge
+[forks-url]: https://github.com/Cqban/RTshark/network/members
+[stars-shield]: https://img.shields.io/github/stars/Cqban/RTshark.svg?style=for-the-badge
+[stars-url]: https://github.com/Cqban/RTshark/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Cqban/RTshark.svg?style=for-the-badge
+[issues-url]: https://github.com/Cqban/RTshark/issues
 [Python-shield]: https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue
 [Python-url]: https://python.org 
 [HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[CSS3]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
