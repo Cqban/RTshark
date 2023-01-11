@@ -26,7 +26,7 @@ def main():
     input_file = args.input_file
     output_file = args.output_file
 
-    capture_file = pyshark.FileCapture(input_file)
+    capture_file = pyshark.FileCapture(input_file, display_filter='tcp.flags.syn==1 and tcp.flags.ack==1')
     port_list = extract_ports(capture_file)
     html = generate_webpage(port_list)
     write_page(html, output_file)
