@@ -14,7 +14,7 @@ def generate_webpage(port_list):
     background-image: url(https://i.postimg.cc/Nj375g1j/background.jpg);
     }
         .rslt {
-            display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         border:1px #C0C0C0;
@@ -38,6 +38,13 @@ def generate_webpage(port_list):
         border:1px white;
         color: white;
         background: black;
+        text-align: center;
+    }
+
+        #logo {
+            width: 25%;
+            margin-top: 10%;
+            margin-left: 38%;    
     }"""
     
     # Code HTML
@@ -52,7 +59,6 @@ def generate_webpage(port_list):
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style.css">
-        
         <title>Open Ports</title>
     </head>
     <body>
@@ -63,10 +69,8 @@ def generate_webpage(port_list):
             <tr>
                 <td>{port_list}</td>
             </tr>
-    <tbody>
-        
-            </tbody>
         </table>
+        <img src="https://i.postimg.cc/sxLyrXQs/rtshark.png" id="logo" alt="RTshark Logo"/>
     </body>
     </html>""" 
 
