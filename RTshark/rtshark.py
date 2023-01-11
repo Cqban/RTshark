@@ -7,8 +7,7 @@ from module1 import generate_webpage
 def extract_ports(capture_file):
     port_list = []
     for packet in capture_file:
-        if hasattr(packet, 'tcp'):
-            port_list.append(int(packet.tcp.srcport))
+        port_list.append(int(packet.tcp.srcport))
     return sorted(set(port_list))
 
 # Function to write the given HTML code to the specified file
@@ -26,6 +25,7 @@ def main():
     input_file = args.input_file
     output_file = args.output_file
 
+    #Ouverture du fichier pcap avec pyshark en appliquant un filtre pour les segments TCP ayant les flag SYN et ACK
     capture_file = pyshark.FileCapture(input_file, display_filter='tcp.flags.syn==1 and tcp.flags.ack==1')
     port_list = extract_ports(capture_file)
     html = generate_webpage(port_list)
