@@ -9,10 +9,17 @@
 
 # Function to generate an HTML page displaying the given list of ports
 def generate_webpage(port_list):
+    ''' Cette fonction fait un truc
+	
+    :param port_list: variable mes couilles
+	
+
+    '''
     # Code CSS
-    codecss = """body{
-    background-image: url(https://i.postimg.cc/Nj375g1j/background.jpg);
-    }
+    codecss = """
+body {
+       background-image: url(https://i.postimg.cc/Nj375g1j/background.jpg);
+     }
         .rslt {
         display: flex;
         justify-content: center;
@@ -27,11 +34,11 @@ def generate_webpage(port_list):
         background:#F0F0F0;
         border-style: groove;
         border-radius: 10px;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
         font-size: 2rem;
     }
         .rslt td {
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
         font-size: medium;
         text-shadow: 3px white;
         font-style: bold;
@@ -45,7 +52,8 @@ def generate_webpage(port_list):
             width: 25%;
             margin-top: 10%;
             margin-left: 38%;    
-    }"""
+    }
+    """
     
     # Code HTML
     codehtml = f"""
@@ -75,3 +83,5 @@ def generate_webpage(port_list):
     </html>""" 
 
     return codehtml
+
+   
