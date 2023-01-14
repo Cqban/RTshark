@@ -1,5 +1,5 @@
 """
-.. module:: generate_webpage
+.. module:: write_webpage
    :platform: Unix, windows
    :synopsis: Writing HTML file function
 
@@ -13,7 +13,7 @@ def write_page(html, output_file):
 
     :param args: Output file
     :type args: str
-    :raises: TypeError
+    :raises: TypeErrorWrite
     :example: 
 
     index.html

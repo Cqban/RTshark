@@ -15,7 +15,7 @@ def extract_ports(capture_file):
     :type args: str
     :returns: Returns the open ports as a list.
     :rtype: int
-    :raises: TypeError
+    :raises: TypeErrorExtract
     :example: 
 
     [80, 443, 25565]

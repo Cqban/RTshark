@@ -16,7 +16,7 @@ def generate_webpage(port_list):
     :type args: int
     :returns: Return the source code of the webpage
     :rtype: str
-    :raises: TypeError
+    :raises: TypeErrorGenerate
     :example: 
 
     <body>Hey<body>
