@@ -1,16 +1,8 @@
-"""
-.. module:: generate_webpage
-   :platform: Unix, windows
-   :synopsis: module1 du projet
 
-.. moduleauthor:: Lechevrel Malko Fournier Vincent <malko.lechevrel@etu.univ-poitiers.fr>
-
-"""
-
-# Function to generate an HTML page displaying the given list of ports
-def generate_webpage(port_list):
-    # Code CSS
-    codecss = """body{
+    <!DOCTYPE html>
+    <html lang="en">
+    <style>
+        body{
     background-image: url(https://i.postimg.cc/Nj375g1j/background.jpg);
     }
         .rslt {
@@ -38,21 +30,20 @@ def generate_webpage(port_list):
         border:1px white;
         color: white;
         background: black;
-    }"""
-    
-    # Code HTML
-    codehtml = f"""
-    <!DOCTYPE html>
-    <html lang="en">
-    <style>
-        {codecss}
+        text-align: center;
+    }
+
+        #logo {
+            width: 25%;
+            margin-top: 10%;
+            margin-left: 38%;    
+        }
     </style>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style.css">
-        
         <title>Open Ports</title>
     </head>
     <body>
@@ -61,13 +52,9 @@ def generate_webpage(port_list):
                 <th>List of Open Ports</th>
             </tr>
             <tr>
-                <td>{port_list}</td>
+                <td>[80, 443]</td>
             </tr>
-    <tbody>
-        
-            </tbody>
         </table>
+        <img src="https://i.postimg.cc/sxLyrXQs/rtshark.png" id="logo" alt="RTshark Logo"/>
     </body>
-    </html>""" 
-
-    return codehtml
+    </html>
