@@ -16,7 +16,7 @@ def main():
     output_file = args.output_file
 
     #Ouverture du fichier pcap avec pyshark en appliquant un filtre pour les segments TCP ayant les flag SYN et ACK
-    capture_file = pyshark.FileCapture(input_file, display_filter='tcp.flags.syn==1 and tcp.flags.ack==1')
+    capture_file = pyshark.FileCapture(input_file)
     port_list = extract_ports(capture_file)
     html = generate_webpage(port_list)
     write_page(html, output_file)

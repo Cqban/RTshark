@@ -22,8 +22,7 @@ def extract_ports(capture_file):
     """
     port_list = []
     for packet in capture_file:
-        print(packet)
-        if "ACK" in str(packet):
-            print("a")
-            port_list.append(int(packet.tcp.srcport))
+        if hasattr(packet, 'tcp'):
+            if "0x012" in str(packet):
+                port_list.append(int(packet.tcp.srcport))
     return sorted(set(port_list))
