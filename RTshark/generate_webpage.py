@@ -32,7 +32,9 @@ def generate_webpage(port_list):
         
         <title>Open Ports</title>
     </head>
+    
     """
+
     codecss = """body{
     background-image: url(https://i.postimg.cc/Nj375g1j/background.jpg);
     }

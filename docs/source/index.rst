@@ -10,20 +10,9 @@ Welcome to RTshark's documentation!
    :maxdepth: 1
    :caption: Fonctions du Projet :
 
-   Extract_ports
-   Write_page
-   Generate_webpage
-
-
-
-
-   :caption: Objectifs et cahiers des charges
-
-   content/objectifs
-   content/cahier_des_charges
-   content/code
-
-
+   extract_ports
+   write_page
+   generate_webpage
 
 Indices and tables
 ==================

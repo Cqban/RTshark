@@ -7,7 +7,7 @@
 import pyshark
 import argparse
 import webbrowser
-from write_page import write_page
-from extract_ports import extract_ports
-from generate_webpage import generate_webpage
+import write_page
+import extract_ports
+import generate_webpage
 

@@ -19,7 +19,9 @@ def extract_ports(capture_file):
     :example: 
 
     [80, 443, 25565]
+
     """
+    
     port_list = []
     for packet in capture_file:
         if hasattr(packet, 'tcp'):

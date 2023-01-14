@@ -17,6 +17,8 @@ def write_page(html, output_file):
     :example: 
 
     index.html
+    
     """
+
     with open(output_file, 'w') as f:
         f.write(html)
