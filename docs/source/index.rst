@@ -11,7 +11,6 @@ Welcome to RTshark's documentation!
    :caption: Project's Functions :
 
    extract_ports
-   rtshark
    write_page
    generate_webpage
 
