@@ -8,9 +8,10 @@ Welcome to RTshark's documentation!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Fonctions du Projet :
+   :caption: Project's Functions :
 
    extract_ports
+   rtshark
    write_page
    generate_webpage
 

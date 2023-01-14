@@ -3,6 +3,7 @@ write_page function
 
 .. automodule:: write_page
 
+
 write_page
 =============================
 
