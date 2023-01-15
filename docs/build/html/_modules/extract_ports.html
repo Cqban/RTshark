@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Overview: module code &mdash; RTshark 1.0 documentation</title>
+  <title>extract_ports &mdash; RTshark 1.0 documentation</title>
   
 
   
@@ -132,7 +132,9 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Overview: module code</li>
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>extract_ports</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -147,11 +149,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>All modules for which code is available</h1>
-<ul><li><a href="extract_ports.html">extract_ports</a></li>
-<li><a href="generate_webpage.html">generate_webpage</a></li>
-<li><a href="write_page.html">write_page</a></li>
-</ul>
+  <h1>Source code for extract_ports</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">.. module:: extract_ports</span>
+<span class="sd">   :platform: Unix, windows</span>
+<span class="sd">   :synopsis: Port extraction function</span>
+
+<span class="sd">.. moduleauthor:: Lechevrel Malko Fournier Vincent &lt;malko.lechevrel@etu.univ-poitiers.fr&gt;</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="extract_ports"><a class="viewcode-back" href="../extract_ports.html#extract_ports.extract_ports">[docs]</a><span class="k">def</span> <span class="nf">extract_ports</span><span class="p">(</span><span class="n">capture_file</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function allows you to extract open ports from a PCAP file.</span>
+
+<span class="sd">    :param args: PCAP file</span>
+<span class="sd">    :type args: str</span>
+<span class="sd">    :returns: Returns the open ports as a list.</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    :raises: TypeErrorExtract</span>
+<span class="sd">    :example: </span>
+
+<span class="sd">    [80, 443, 25565]</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">port_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">capture_file</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span> <span class="s1">&#39;tcp&#39;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s2">&quot;0x012&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">packet</span><span class="p">):</span>
+                <span class="n">port_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">packet</span><span class="o">.</span><span class="n">tcp</span><span class="o">.</span><span class="n">srcport</span><span class="p">))</span>
+    <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">port_list</span><span class="p">))</span></div>
+</pre></div>
 
            </div>
            

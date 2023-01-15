@@ -7,13 +7,12 @@ Welcome to RTshark's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Project's Functions :
 
-
-   module1
-
-
+   extract_ports
+   write_page
+   generate_webpage
 
 Indices and tables
 ==================

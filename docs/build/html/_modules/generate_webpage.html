@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>generate_webpage &mdash; RTshark 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> RTshark
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Project's Functions :</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../extract_ports.html">extract_ports function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../write_page.html">write_page function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generate_webpage.html">generate_webpage function</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RTshark</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>generate_webpage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for generate_webpage</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">.. module:: generate_webpage</span>
+<span class="sd">   :platform: Unix, windows</span>
+<span class="sd">   :synopsis: Web page generation function</span>
+
+<span class="sd">.. moduleauthor:: Lechevrel Malko Fournier Vincent &lt;malko.lechevrel@etu.univ-poitiers.fr&gt;</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Function to generate an HTML page displaying the given list of ports</span>
+<div class="viewcode-block" id="generate_webpage"><a class="viewcode-back" href="../generate_webpage.html#generate_webpage.generate_webpage">[docs]</a><span class="k">def</span> <span class="nf">generate_webpage</span><span class="p">(</span><span class="n">port_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function generates the source code of the HTML page containing the list of open ports.</span>
+
+<span class="sd">    :param args: Extracted ports list</span>
+<span class="sd">    :type args: int</span>
+<span class="sd">    :returns: Return the source code of the webpage</span>
+<span class="sd">    :rtype: str</span>
+<span class="sd">    :raises: TypeErrorGenerate</span>
+<span class="sd">    :example: </span>
+
+<span class="sd">    &lt;body&gt;Hey&lt;body&gt;</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">codecss</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;body{</span>
+<span class="s2">    background-image: url(https://i.postimg.cc/Nj375g1j/background.jpg);</span>
+<span class="s2">    }</span>
+<span class="s2">        .rslt {</span>
+<span class="s2">        display: flex;</span>
+<span class="s2">        justify-content: center;</span>
+<span class="s2">        align-items: center;</span>
+<span class="s2">        border:1px #C0C0C0;</span>
+<span class="s2">        border-style: solid;</span>
+<span class="s2">        border-radius: 5px;</span>
+<span class="s2">        background: black;</span>
+<span class="s2">    }</span>
+<span class="s2">        .rslt th {</span>
+<span class="s2">        border:1px black;</span>
+<span class="s2">        background:#F0F0F0;</span>
+<span class="s2">        border-style: groove;</span>
+<span class="s2">        border-radius: 10px;</span>
+<span class="s2">        font-family: Arial, &#39;Helvetica Neue&#39;, Helvetica, sans-serif;</span>
+<span class="s2">        font-size: 2rem;</span>
+<span class="s2">    }</span>
+<span class="s2">        .rslt td {</span>
+<span class="s2">        font-family: Arial, &#39;Helvetica Neue&#39;, Helvetica, sans-serif;</span>
+<span class="s2">        font-size: medium;</span>
+<span class="s2">        text-shadow: 3px white;</span>
+<span class="s2">        font-style: bold;</span>
+<span class="s2">        border:1px white;</span>
+<span class="s2">        color: white;</span>
+<span class="s2">        background: black;</span>
+<span class="s2">        text-align: center;</span>
+<span class="s2">    }</span>
+
+<span class="s2">        #logo {</span>
+<span class="s2">            width: 25%;</span>
+<span class="s2">            margin-top: 10%;</span>
+<span class="s2">            margin-left: 38%;    </span>
+<span class="s2">    }</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># Code HTML</span>
+    <span class="n">codehtml</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;!DOCTYPE html&gt;</span>
+<span class="s2">    &lt;html lang=&quot;en&quot;&gt;</span>
+<span class="s2">    &lt;style&gt;</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">codecss</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">    &lt;/style&gt;</span>
+<span class="s2">    &lt;head&gt;</span>
+<span class="s2">        &lt;meta charset=&quot;UTF-8&quot;&gt;</span>
+<span class="s2">        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</span>
+<span class="s2">        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span>
+<span class="s2">        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;</span>
+<span class="s2">        &lt;title&gt;Open Ports&lt;/title&gt;</span>
+<span class="s2">    &lt;/head&gt;</span>
+<span class="s2">    &lt;body&gt;</span>
+<span class="s2">        &lt;table class=&quot;rslt&quot;&gt;</span>
+<span class="s2">            &lt;tr&gt;</span>
+<span class="s2">                &lt;th&gt;List of Open Ports&lt;/th&gt;</span>
+<span class="s2">            &lt;/tr&gt;</span>
+<span class="s2">            &lt;tr&gt;</span>
+<span class="s2">                &lt;td&gt;</span><span class="si">{</span><span class="n">port_list</span><span class="si">}</span><span class="s2">&lt;/td&gt;</span>
+<span class="s2">            &lt;/tr&gt;</span>
+<span class="s2">        &lt;/table&gt;</span>
+<span class="s2">        &lt;img src=&quot;https://i.postimg.cc/sxLyrXQs/rtshark.png&quot; id=&quot;logo&quot; alt=&quot;RTshark Logo&quot;/&gt;</span>
+<span class="s2">    &lt;/body&gt;</span>
+<span class="s2">    &lt;/html&gt;&quot;&quot;&quot;</span> 
+
+    <span class="k">return</span> <span class="n">codehtml</span></div>
+
+   
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Malko Lechevrel, Vincent Fournier.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
